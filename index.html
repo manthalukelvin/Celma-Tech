@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celma Tech Blog</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f3f4f6;
+        --card: #ffffff;
+        --text: #111827;
+        --accent: #2563eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+        color: #ffffff;
+        padding: 3rem 1rem;
+        text-align: center;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+      }
+
+      h2 {
+        margin-top: 2rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+
+      article,
+      blockquote {
+        margin: 0;
+        background: var(--card);
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      article h3 {
+        margin-top: 0;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.15rem 0.5rem;
+        border-radius: 999px;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-size: 0.8rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.25rem;
+        background: #e5e7eb;
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Celma Tech Blog</h1>
+      <p>Your company space for technology insights, motivational quotes, and software updates.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="technology-posts">
+        <h2 id="technology-posts">Technology</h2>
+        <div class="grid">
+          <article>
+            <h3>Cloud-First Teams in 2026</h3>
+            <p>How modern teams can ship faster by combining automation, observability, and AI-assisted development.</p>
+            <span class="tag">Technology</span>
+          </article>
+          <article>
+            <h3>Cybersecurity Basics for Everyone</h3>
+            <p>A practical checklist to improve authentication, data protection, and secure collaboration in daily work.</p>
+            <span class="tag">Technology</span>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="motivational-quotes">
+        <h2 id="motivational-quotes">Motivational Quotes</h2>
+        <div class="grid">
+          <blockquote>
+            "Success is the sum of small efforts, repeated day in and day out."<br />
+            <strong>— Robert Collier</strong>
+          </blockquote>
+          <blockquote>
+            "The future depends on what you do today."<br />
+            <strong>— Mahatma Gandhi</strong>
+          </blockquote>
+        </div>
+      </section>
+
+      <section aria-labelledby="software-highlights">
+        <h2 id="software-highlights">Software</h2>
+        <div class="grid">
+          <article>
+            <h3>Celma CRM Suite</h3>
+            <p>Manage customers, automate follow-ups, and track conversions in one clean dashboard.</p>
+            <span class="tag">Software</span>
+          </article>
+          <article>
+            <h3>Celma Team Ops</h3>
+            <p>Coordinate projects, monitor workflows, and keep every department aligned in real time.</p>
+            <span class="tag">Software</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Celma Tech. Built for innovation and growth.</p>
+    </footer>
+  </body>
+</html>
